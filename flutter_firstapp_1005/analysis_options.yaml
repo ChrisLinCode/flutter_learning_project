@@ -1,0 +1,20 @@
+
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    #建議是否優先使用 const 構造函數來創建對象
+    prefer_const_constructors: false
+    #建議是否優先使用 final 修飾符來聲明字段
+    prefer_final_fields: false
+    #建議是否在 Widget 的構造函數中使用 key 參數
+    use_key_in_widget_constructors: false
+    #建議是否優先使用 const 文字來創建不可變對象
+    prefer_const_literals_to_create_immutables: false
+    #建議是否優先使用 const 構造函數來創建不可變對象
+    prefer_const_constructors_in_immutables: false
+    #建議是否避免使用 print 來輸出調試信息
+    avoid_print: false
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
