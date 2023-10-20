@@ -60,4 +60,4 @@ These are some of the core widgets and UI components used in the Flutter WordPai
 
 | GeneratorPage | FavoritesPage |
 | --- | --- |
-| ![GeneratorPage](flutter_firstapp_1005/screenshot/GeneratorPage.png) | ![FavoritesPage](flutter_firstapp_1005/screenshot/FavoritesPage.png) |
+| ![GeneratorPage](screenshot/GeneratorPage.png) | ![FavoritesPage](screenshot/FavoritesPage.png) |
