@@ -14,10 +14,6 @@ This repository is dedicated to showcasing my journey and exercises in the world
 Here's a list of some of the projects and applications you'll find in this repository:
 
 1. **flutter_firstapp_1005** - word pair generator.
-
-   ![main page](project1-screenshot.png)
-   
    [Link to flutter_firstapp_1005](flutter_learning_project/)
-
 2. ...
 
