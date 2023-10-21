@@ -17,5 +17,9 @@ Here's a list of some of the projects and applications you'll find in this repos
    
    [Link to flutter_firstapp_1005](flutter_firstapp_1005/)
    
-2. ...
+2. **flutter_shoppinglist_1008** - shoppinglist.
+
+   [Link to flutter_shoppinglist_1008](flutter_shoppinglist_1008/)
+
+3. ...
 
