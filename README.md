@@ -17,13 +17,12 @@ Here's a list of some of the projects and applications you'll find in this repos
 
    [Link to flutter_firstapp_1005](flutter_firstapp_1005/)
    
-2. **flutter_shoppinglist_1008** - shoppinglist.
+2. **flutter_voice_1016** - shoppinglist.
 
    [Link to flutter_shoppinglist_1008](flutter_shoppinglist_1008/)
 
-3.  **flutter_voice_1016** - speech to text.
+3. **flutter_shoppinglist_1008** - speech to text.
 
-   [ Link to flutter_voice_1016](flutter_voice_1016/)
-
-4. ...
+   [Link to flutter_voice_1016](flutter_voice_1016/)
+   
 
