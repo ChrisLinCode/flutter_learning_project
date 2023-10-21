@@ -15,7 +15,7 @@ Here's a list of some of the projects and applications you'll find in this repos
 
 1. **flutter_firstapp_1005** - word pair generator.
    
-   [Link to flutter_firstapp_1005](flutter_learning_project/)
+   [Link to flutter_firstapp_1005](flutter_firstapp_1005/)
    
 2. ...
 
