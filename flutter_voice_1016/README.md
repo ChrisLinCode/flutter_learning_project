@@ -44,4 +44,6 @@ These are some of the core widgets and user interface components used in the Flu
 
 ## Screenshots
 
-
+| mainpage_default | mainpage_operation |
+| --- | --- |
+| ![mainpage_default](screenshot/mainpage_default.png) | ![mainpage_operation](screenshot/mainpage_operation.png) |
