@@ -1,16 +1,49 @@
-# flutter_voice_1016
+# Flutter Speech Recognition App
 
-A new Flutter project.
+Welcome to the Flutter Speech Recognition App! This Flutter application allows you to perform speech recognition and visualize the audio input. It showcases various features of Flutter, including audio processing, animation, and user interface design.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Real-time speech recognition.
+- Confidence level display.
+- Visualized audio input in the form of a soundwave.
 
-A few resources to get you started if this is your first Flutter project:
+## Usage
+- Launch the app, and you'll see the main screen with a microphone button.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Tap the microphone button to start speech recognition.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- As you speak, your speech will be recognized and displayed on the screen.
+
+- The confidence level of the recognition will be shown at the top of the screen.
+
+- The audio input is visualized as a soundwave at the bottom of the screen.
+
+- Tap the microphone button again to stop speech recognition.
+
+## Widgets and UI Components
+
+This Flutter speech recognition app utilizes various widgets and user interface components to create a rich user experience. Here are some of the key components used in the application:
+
+### 1. `SpeechScreen`
+
+- Description: The main screen of the app for performing speech recognition.
+- Features:
+  - Real-time speech recognition.
+  - Display of confidence level.
+  - Microphone button to start and stop recognition.
+
+### 2. `SoundVisualizer`
+
+- Description: A custom widget for visualizing audio input as a sound waveform.
+- Features:
+  - Custom drawing of the sound waveform.
+  - Dynamic scaling based on audio input.
+
+These are some of the core widgets and user interface components used in the Flutter speech recognition app. Understanding these components will help you navigate and utilize the app effectively.
+
+## Screenshots
+
+| mainpage_default | mainpage_operation |
+| --- | --- |
+| ![mainpage_default](screenshot/mainpage_default.png) | ![mainpage_operation](screenshot/mainpage_operation.png) |
