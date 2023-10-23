@@ -1,16 +1,15 @@
-# flutter_uidesign_1015
+# Flutter interface design application
 
-flutter介面設計
+This is a Flutter application that showcases information about characters from the manga/anime series "SPY X FAMILY." The app allows you to explore the details of different characters, including their names, codenames, and other information. You can also interact with the characters by increasing their popularity.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+This Flutter app, titled "SPY X Family," showcases information about the main characters of the SPY X Family series. Here are its key features:
 
-A few resources to get you started if this is your first Flutter project:
+- Display detailed information about the main characters.
+- Show character images, names, and introductory descriptions.
+- Allow users to increment the popularity of each character.
+- Access additional options via call, location, and message buttons.
+- Utilize an elegant and user-friendly tabbed interface for character selection.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
