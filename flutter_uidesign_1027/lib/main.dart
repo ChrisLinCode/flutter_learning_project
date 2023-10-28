@@ -45,28 +45,6 @@ List<TabChoice> tabList = <TabChoice>[
   )
 ];
 
-Column _buildButtonColumn(BuildContext context, IconData icon, String label) {
-  //圖示布局方式
-  return Column(
-    mainAxisSize: MainAxisSize.min,
-    mainAxisAlignment: MainAxisAlignment.center,
-    children: [
-      Icon(icon, color: Theme.of(context).primaryColor),
-      Container(
-        margin: const EdgeInsets.only(top: 10),
-        child: Text(
-          label,
-          style: TextStyle(
-            fontSize: 12,
-            fontWeight: FontWeight.w400, //文字粗細程度400為正常
-            color: Theme.of(context).primaryColor,
-          ),
-        ),
-      ),
-    ],
-  );
-}
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -109,13 +87,51 @@ class _ParentWidgetState extends State<ParentWidget> {
   }
 }
 
-class UiPage extends StatefulWidget{
+class UiPage extends StatelessWidget{
   final void Function(TabChoice) increment;
 
   const UiPage({
     super.key,
     required this.increment,
   });
+
+  @override
+  Widget build(BuildContext context) {
+    return DefaultTabController(//控制scaffold的tabBar和body連動
+      length: tabList.length,
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('SPY X Family'),
+          bottom: TabBar(
+            //tabBar的文字。
+            tabs: tabList.map((tab) => Tab(text: tab.name)).toList(),
+          ),
+        ),
+        body: Builder(
+            builder: (BuildContext context){
+              return TabBarView(
+                children: tabList.map((tab){
+                  return ListView(
+                    children: [
+                      image(tab),//使用ParentWidget的物件-->widget.[物件名稱]
+                      titleSection(tab, context), //傳遞清單資料和context資訊
+                      buttonSection(context),
+                      textSection(tab),
+                    ],
+                  );
+                }).toList(),
+
+              );
+
+            }
+
+        ),
+
+      ),
+
+    );
+
+  }
 
   Widget image(TabChoice tab) {
     return FittedBox(
@@ -191,6 +207,28 @@ class UiPage extends StatefulWidget{
     );
   }
 
+  Column _buildButtonColumn(BuildContext context, IconData icon, String label) {
+    //圖示布局方式
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Icon(icon, color: Theme.of(context).primaryColor),
+        Container(
+          margin: const EdgeInsets.only(top: 10),
+          child: Text(
+            label,
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w400, //文字粗細程度400為正常
+              color: Theme.of(context).primaryColor,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
   Widget textSection(TabChoice tab) {
     return Container(
       padding: const EdgeInsets.all(32),
@@ -202,51 +240,7 @@ class UiPage extends StatefulWidget{
   }
 
 
-  @override
-  State<UiPage> createState() => _UiPageState();
-
 }
 
-class _UiPageState extends State<UiPage>{
-
-  @override
-  Widget build(BuildContext context) {
-    return DefaultTabController(//控制scaffold的tabBar和body連動
-      length: tabList.length,
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text('SPY X Family'),
-          bottom: TabBar(
-            //tabBar的文字。
-            tabs: tabList.map((tab) => Tab(text: tab.name)).toList(),
-          ),
-        ),
-        body: Builder(
-            builder: (BuildContext context){
-              return TabBarView(
-                children: tabList.map((tab){
-                  return ListView(
-                    children: [
-                      widget.image(tab),//使用ParentWidget的物件-->widget.[物件名稱]
-                      widget.titleSection(tab, context), //傳遞清單資料和context資訊
-                      widget.buttonSection(context),
-                      widget.textSection(tab),
-                    ],
-                  );
-                }).toList(),
-
-              );
-
-            }
-
-        ),
-
-      ),
-
-    );
-
-  }
-
-}
 
 
