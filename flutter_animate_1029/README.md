@@ -25,6 +25,6 @@ This Flutter application utilizes the following widgets and UI components:
 
 ## screenshot
 
-| mainpage_default | mainpage_operation |
+| page_Zenitsu | page_minato |
 | --- | --- |
-| ![mainpage_default](screenshot/mainpage_default.png) | ![mainpage_operation](screenshot/mainpage_operation.png) |
+| ![page_Zenitsu](screenshot/page_Zenitsu.png) | ![page_minato](screenshot/page_minato.png) |
