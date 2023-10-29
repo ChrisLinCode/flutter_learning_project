@@ -28,6 +28,10 @@ Here's a list of some of the projects and applications you'll find in this repos
 4. **flutter_uidesign_1027** - flutter application interface design.
 
    [Link to flutter_uidesign_1027](flutter_uidesign_1027/)
+
+4. **flutter_animate_1029** - animation.
+
+   [Link to flutter_animate_1029](flutter_animate_1029/)
    
 ## Getting Started
 
