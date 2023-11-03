@@ -1,16 +1,30 @@
 # flutter_animate_1029
 
-A new Flutter project.
+This is a Flutter application that demonstrates a simple animated image gallery with a bottom navigation bar.
 
-## Getting Started
+## Features
+- Image gallery with fade-in animation.
+- Start/stop animation using a floating action button.
+- Bottom navigation for switching between different images.
 
-This project is a starting point for a Flutter application.
+## Usage
 
-A few resources to get you started if this is your first Flutter project:
+1. **Image Gallery**: Upon launching the app, you will be presented with an image gallery.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. **Image Animation**: To start or stop the animation effect on the displayed image, use the floating action button located at the bottom. Click it to toggle the animation.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3. **Switching Images**: You can switch between different images using the bottom navigation bar. Simply tap on the icons in the bottom navigation to view different images.
+
+## Widgets and UI Components
+
+This Flutter application utilizes the following widgets and UI components:
+
+- FadeTransition: Controls the opacity of the image with a curved animation.
+- FloatingActionButton: A floating action button to control the animation.
+- BottomNavigationBar: The bottom navigation bar for image selection.
+
+## screenshot
+
+| page_Zenitsu | page_minato |
+| --- | --- |
+| ![page_Zenitsu](screenshot/page_Zenitsu.png) | ![page_minato](screenshot/page_minato.png) |
