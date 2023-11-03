@@ -1,16 +1,35 @@
-# flutter_canvas_1030
+# Signature App
 
-A new Flutter project.
+The Signature App is a Flutter-based application that allows users to create and manage digital signatures. With this app, users can select pen colors, draw signatures on a canvas, save their signatures, and view previously saved signatures.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Select pen color
+- Draw signatures
+- Clear the canvas
+- Save signature images
+- View previously saved signature images
 
-A few resources to get you started if this is your first Flutter project:
+## Usage
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Launch the app, and you'll see a blank canvas.
+2. Tap the "Select Pen Color" icon at the top of the canvas to choose your preferred pen color.
+3. Start drawing your signature on the canvas. You can use different pen colors in different sections.
+4. If needed, tap the "Clear" icon at the top of the canvas to reset the signature area.
+5. Tap the "Save" icon at the top of the canvas to save the signature image.
+6. Open the side navigation drawer on the left to view a list of previously saved signature images.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Widgets and UI Components
+
+- `CustomPaint`: A custom painting widget used to create the signature area.
+- `Drawer`: A left-side navigation drawer displaying a list of previously saved signature images.
+- `AlertDialog`: A dialog for selecting the pen color.
+- `GestureDetector`: Used to detect gesture events such as finger swipes.
+- `ViewSignaturePage` is a widget that allows users to view previously saved signature images and provides the option to delete them.
+- `imagePath`: The path to the saved image file.
+
+## Screenshot
+
+| default | signature |
+| --- | --- |
+| ![default](screenshot/default.png) | ![signature](screenshot/signature.png) |
